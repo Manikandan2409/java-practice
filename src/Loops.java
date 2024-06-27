@@ -10,17 +10,20 @@ public class Loops {
         Loops l = new Loops();
 
         l.consecutiveNumber(n);
-    
-    }
-    
-// iteration recursive
-    public void consecutiveNumber(int n){
-        if (n>1) {
-            consecutiveNumber(n-1);
-        }
-        System.out.print(n+" ");
+        
     }
 
+// iteration recursive
+    public void consecutiveNumber(int n){
+        if (n>0) {
+            
+            consecutiveNumber(n-1);
+        }
+        if ((n& 1) ==0) {
+            System.out.print(n+" ");
+        }
+    }
+// Left Triangle
     public void leftTriangle(int n){
         //Left Triangle
         System.out.println("--------------------left Triangle-----------------");
